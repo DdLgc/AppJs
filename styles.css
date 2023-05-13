@@ -1,43 +1,84 @@
-
-*{
-    letter-spacing: 5px;
-    user-select: none;
-    /* box-shadow: 0 0 0 3px red inset; */
-    padding: 0;
-    margin: 0;
-    box-sizing:border-box;
-    text-decoration: none;
-    font-family:'Lato', sans-serif;
+:root {
+  --color1: crimson;
+  --color2: white;
+  --color3: #0000002c;
+  --color4: rgb(157, 17, 17);
+  --color5: linear-gradient(60deg, #29323c 0%, #485563 100%);
+  --color6: whitesmoke;
+}
+* {
+  letter-spacing: 5px;
+  user-select: none;
+  box-shadow: 0 0 0 3px red inset;
+  padding: 0; 
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Lato", sans-serif;
 }
 body {
-    height: 100vh;
+  height: 100vh;
 }
-.joueurs {
-    display: flex;
-    flex-direction: row;
+.container {
+  position: relative;
+  width: 95vw;
+  height: 95vh;
+  display: grid;
+  grid-template-columns: 50% 50%;
 }
-.joueur1 {
-    background-color: aqua;
-    height: 100vh;
-    width: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+#newgame {
+
 }
-.joueur2 {
-    background-color: rgb(63, 91, 63);
-    height: 100vh;
-    width: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.dice {
+  position: abslotute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
-.result {
-    display: fixed;
-    top: 4em 2em 2em 2em;
-    background-color: crimson;
-    border: 1px solid #ccc;
-    padding: 20px;
-    border-radius: 10px;
-    font-size: 24px;
+#roll {
+
+}
+#hold {
+
+}
+.player1 {
+  background-color: aqua;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.topContainer {
+
+}
+.playerName {
+    
+}
+.score {
+  color: rgb(157, 17, 17);
+}
+.currentContainer {
+}
+.currentScore1 {
+  color: rgb(157, 17, 17);
+}
+.currentScore2 {
+  color: rgb(157, 17, 17);
+}
+.player2 {
+  background-color: rgb(63, 91, 63);
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button {
+  display: flex;
+  position: absolute;
+}
+.playerName {
+  color: #d16129;
 }
