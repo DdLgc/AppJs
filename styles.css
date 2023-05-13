@@ -1,0 +1,43 @@
+
+*{
+    letter-spacing: 5px;
+    user-select: none;
+    /* box-shadow: 0 0 0 3px red inset; */
+    padding: 0;
+    margin: 0;
+    box-sizing:border-box;
+    text-decoration: none;
+    font-family:'Lato', sans-serif;
+}
+body {
+    height: 100vh;
+}
+.joueurs {
+    display: flex;
+    flex-direction: row;
+}
+.joueur1 {
+    background-color: aqua;
+    height: 100vh;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.joueur2 {
+    background-color: rgb(63, 91, 63);
+    height: 100vh;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.result {
+    display: fixed;
+    top: 4em 2em 2em 2em;
+    background-color: crimson;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 24px;
+}
